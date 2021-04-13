@@ -1,27 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V6j-4g-ZdX">
     <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--ARView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="Virus_Blaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="Virus_Blaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yua-fv-bwO">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arView>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" id="NjZ-9K-hSS" userLabel="ARView">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LrD-dY-SzW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <size key="freeformSize" width="1194" height="834"/>
                     <connections>
-                        <outlet property="arView" destination="8bC-Xf-vdC" id="TPV-4x-avp"/>
+                        <outlet property="arView" destination="NjZ-9K-hSS" id="8zd-hd-lV9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="134"/>
         </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="3XV-LM-djj">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="V6j-4g-ZdX" customClass="MenuViewController" customModule="Think___Build" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNS-Pq-ygF">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-8s-fVI" userLabel="botonEmpezarPartida">
+                                <rect key="frame" x="532" y="530" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Mpr-Us-edv"/>
+                                </constraints>
+                                <state key="normal" image="Boton Start"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="UUt-QP-r99"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Titulo Think &amp; Build" translatesAutoresizingMaskIntoConstraints="NO" id="GYI-6w-bG0">
+                                <rect key="frame" x="117" y="20" width="960" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="hyq-Su-gnB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y7M-gI-jGu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y7M-gI-jGu" firstAttribute="bottom" secondItem="y3a-8s-fVI" secondAttribute="bottom" constant="154" id="IuZ-Jr-NkZ"/>
+                            <constraint firstItem="y3a-8s-fVI" firstAttribute="centerX" secondItem="ZNS-Pq-ygF" secondAttribute="centerX" id="TSC-I8-QgB"/>
+                            <constraint firstItem="GYI-6w-bG0" firstAttribute="leading" secondItem="Y7M-gI-jGu" secondAttribute="leading" constant="117" id="ZsV-MT-OJ7"/>
+                            <constraint firstItem="y3a-8s-fVI" firstAttribute="leading" secondItem="Y7M-gI-jGu" secondAttribute="leading" constant="532" id="c7q-EZ-4gM"/>
+                            <constraint firstItem="GYI-6w-bG0" firstAttribute="top" secondItem="Y7M-gI-jGu" secondAttribute="top" constant="20" id="eiB-uO-6z2"/>
+                            <constraint firstItem="y3a-8s-fVI" firstAttribute="centerX" secondItem="GYI-6w-bG0" secondAttribute="centerX" id="vWv-8t-BWH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="botonEmpezarPartida" destination="y3a-8s-fVI" id="5Ia-Rs-eQw"/>
+                        <outlet property="tituloThinkBuild" destination="GYI-6w-bG0" id="xiG-XM-DKo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQR-87-vpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-576.3819095477387" y="133.09352517985613"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Boton Start" width="530" height="510"/>
+        <image name="Titulo Think &amp; Build" width="1070" height="188"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
