@@ -20,33 +20,84 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nh-xw-9zF" userLabel="Ready Button">
+                                <rect key="frame" x="547" y="684" width="100" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1nh-xw-9zF" secondAttribute="height" multiplier="10:11" id="TEH-7V-rED"/>
+                                </constraints>
+                                <state key="normal" image="Boton Ready"/>
+                                <connections>
+                                    <action selector="empezarPartida:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nqV-wg-hA5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubc-x5-nXF" userLabel="Relocate Board Button">
+                                <rect key="frame" x="45" y="738" width="317" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ubc-x5-nXF" secondAttribute="height" multiplier="317:56" id="zsI-Xl-l5Q"/>
+                                </constraints>
+                                <state key="normal" image="Boton Relocate Board"/>
+                                <connections>
+                                    <action selector="recolocarEscena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lp7-6h-Mzz"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zim-Vs-h8f" userLabel="Corazon Vida 1">
+                                <rect key="frame" x="0.0" y="20" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-cY-BM2" userLabel="Corazon Vida 2">
+                                <rect key="frame" x="165" y="20" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0B-pD-6yW" userLabel="Corazon Vida 3">
+                                <rect key="frame" x="310" y="20" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-FF-OIF" userLabel="Panel Score">
+                                <rect key="frame" x="934" y="20" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-9u-S7e" userLabel="Score">
+                                <rect key="frame" x="922" y="36" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LrD-dY-SzW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1nh-xw-9zF" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.0837521" id="0YF-Mq-gTw"/>
+                            <constraint firstItem="Ubc-x5-nXF" firstAttribute="leading" secondItem="LrD-dY-SzW" secondAttribute="leading" constant="45" id="33J-Xo-c5t"/>
+                            <constraint firstItem="LrD-dY-SzW" firstAttribute="bottom" secondItem="Ubc-x5-nXF" secondAttribute="bottom" constant="20" id="Apj-GE-7yF"/>
+                            <constraint firstItem="LrD-dY-SzW" firstAttribute="bottom" secondItem="1nh-xw-9zF" secondAttribute="bottom" constant="20" id="YT6-hS-bXv"/>
+                            <constraint firstItem="1nh-xw-9zF" firstAttribute="centerX" secondItem="yua-fv-bwO" secondAttribute="centerX" id="j7Y-HB-bIY"/>
+                            <constraint firstItem="1nh-xw-9zF" firstAttribute="width" secondItem="1nh-xw-9zF" secondAttribute="height" multiplier="10:11" id="jKL-lo-TNE"/>
+                            <constraint firstItem="Ubc-x5-nXF" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.265494" id="mQi-H4-7rw"/>
+                        </constraints>
                     </view>
                     <size key="freeformSize" width="1194" height="834"/>
                     <connections>
                         <outlet property="arView" destination="NjZ-9K-hSS" id="8zd-hd-lV9"/>
+                        <outlet property="botonReady" destination="1nh-xw-9zF" id="ISB-XE-CFl"/>
+                        <outlet property="botonRecolocarEscena" destination="Ubc-x5-nXF" id="Fgl-A8-slD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="134"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Pantalla Inicio View Controller-->
         <scene sceneID="3XV-LM-djj">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="V6j-4g-ZdX" customClass="MenuViewController" customModule="Think___Build" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="V6j-4g-ZdX" customClass="PantallaInicioViewController" customModule="Virus_Blaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZNS-Pq-ygF">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-8s-fVI" userLabel="botonEmpezarPartida">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-8s-fVI" userLabel="botonEmpezarPartida">
                                 <rect key="frame" x="532" y="530" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Mpr-Us-edv"/>
                                 </constraints>
-                                <state key="normal" image="Boton Start"/>
+                                <state key="normal" image="Boton Ready"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="UUt-QP-r99"/>
                                 </connections>
@@ -69,10 +120,6 @@
                             <constraint firstItem="y3a-8s-fVI" firstAttribute="centerX" secondItem="GYI-6w-bG0" secondAttribute="centerX" id="vWv-8t-BWH"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="botonEmpezarPartida" destination="y3a-8s-fVI" id="5Ia-Rs-eQw"/>
-                        <outlet property="tituloThinkBuild" destination="GYI-6w-bG0" id="xiG-XM-DKo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQR-87-vpj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,7 +127,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Boton Start" width="530" height="510"/>
+        <image name="Boton Ready" width="400" height="440"/>
+        <image name="Boton Relocate Board" width="634" height="112"/>
         <image name="Titulo Think &amp; Build" width="1070" height="188"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

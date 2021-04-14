@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EDC7DD472625E3F6007E1C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7DD462625E3F6007E1C75 /* AppDelegate.swift */; };
 		EDC7DD492625E3F6007E1C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7DD482625E3F6007E1C75 /* ViewController.swift */; };
-		EDC7DD4B2625E3F6007E1C75 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EDC7DD4A2625E3F6007E1C75 /* Experience.rcproject */; };
+		EDC7DD4B2625E3F6007E1C75 /* VirusBlaster.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EDC7DD4A2625E3F6007E1C75 /* VirusBlaster.rcproject */; };
 		EDC7DD4E2625E3F6007E1C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC7DD4C2625E3F6007E1C75 /* Main.storyboard */; };
 		EDC7DD502625E406007E1C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC7DD4F2625E406007E1C75 /* Assets.xcassets */; };
 		EDC7DD532625E406007E1C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC7DD512625E406007E1C75 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		EDC7DD432625E3F6007E1C75 /* Virus Blaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virus Blaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC7DD462625E3F6007E1C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC7DD482625E3F6007E1C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDC7DD4A2625E3F6007E1C75 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		EDC7DD4A2625E3F6007E1C75 /* VirusBlaster.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = VirusBlaster.rcproject; sourceTree = "<group>"; };
 		EDC7DD4D2625E3F6007E1C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDC7DD4F2625E406007E1C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDC7DD522625E406007E1C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				EDC7DD462625E3F6007E1C75 /* AppDelegate.swift */,
 				EDC7DD482625E3F6007E1C75 /* ViewController.swift */,
-				EDC7DD4A2625E3F6007E1C75 /* Experience.rcproject */,
+				EDC7DD4A2625E3F6007E1C75 /* VirusBlaster.rcproject */,
 				EDC7DD4C2625E3F6007E1C75 /* Main.storyboard */,
 				EDC7DD4F2625E406007E1C75 /* Assets.xcassets */,
 				EDC7DD512625E406007E1C75 /* LaunchScreen.storyboard */,
@@ -139,7 +139,7 @@
 			files = (
 				EDC7DD492625E3F6007E1C75 /* ViewController.swift in Sources */,
 				EDC7DD472625E3F6007E1C75 /* AppDelegate.swift in Sources */,
-				EDC7DD4B2625E3F6007E1C75 /* Experience.rcproject in Sources */,
+				EDC7DD4B2625E3F6007E1C75 /* VirusBlaster.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
