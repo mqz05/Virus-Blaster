@@ -40,37 +40,74 @@
                                     <action selector="recolocarEscena:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lp7-6h-Mzz"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zim-Vs-h8f" userLabel="Corazon Vida 1">
-                                <rect key="frame" x="0.0" y="20" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Panel Score" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-9u-S7e">
+                                <rect key="frame" x="974" y="20" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GKx-9u-S7e" secondAttribute="height" multiplier="2:1" id="A2a-s6-6md"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-cY-BM2" userLabel="Corazon Vida 2">
-                                <rect key="frame" x="165" y="20" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vida Corazon" translatesAutoresizingMaskIntoConstraints="NO" id="zim-Vs-h8f" userLabel="Corazon Vida 1">
+                                <rect key="frame" x="20" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zim-Vs-h8f" secondAttribute="height" multiplier="1:1" id="phe-Fv-ZcC"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y0B-pD-6yW" userLabel="Corazon Vida 3">
-                                <rect key="frame" x="310" y="20" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vida Corazon" translatesAutoresizingMaskIntoConstraints="NO" id="8rn-ue-Ieh" userLabel="Corazon Vida 2">
+                                <rect key="frame" x="128" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8rn-ue-Ieh" secondAttribute="height" multiplier="1:1" id="Ej7-Pt-h6u"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gw7-FF-OIF" userLabel="Panel Score">
-                                <rect key="frame" x="934" y="20" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vida Corazon" translatesAutoresizingMaskIntoConstraints="NO" id="1S8-VV-u2h" userLabel="Corazon Vida 3">
+                                <rect key="frame" x="236" y="20" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1S8-VV-u2h" secondAttribute="height" multiplier="1:1" id="Vy8-dm-2cL"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-9u-S7e" userLabel="Score">
-                                <rect key="frame" x="922" y="36" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNc-bv-Jhm" userLabel="Score">
+                                <rect key="frame" x="1102" y="38" width="60" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dNc-bv-Jhm" secondAttribute="height" multiplier="12:13" id="iJk-q5-9fA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Panel Game Over" translatesAutoresizingMaskIntoConstraints="NO" id="iLi-UF-hut" userLabel="Panel Final">
+                                <rect key="frame" x="565" y="385" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iLi-UF-hut" secondAttribute="height" multiplier="1:1" id="sTT-t5-ka3"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LrD-dY-SzW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="8rn-ue-Ieh" firstAttribute="top" secondItem="yua-fv-bwO" secondAttribute="top" constant="20" id="0Kw-qb-hN2"/>
                             <constraint firstItem="1nh-xw-9zF" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.0837521" id="0YF-Mq-gTw"/>
+                            <constraint firstItem="iLi-UF-hut" firstAttribute="centerX" secondItem="yua-fv-bwO" secondAttribute="centerX" id="0Zd-id-hW6"/>
                             <constraint firstItem="Ubc-x5-nXF" firstAttribute="leading" secondItem="LrD-dY-SzW" secondAttribute="leading" constant="45" id="33J-Xo-c5t"/>
+                            <constraint firstItem="GKx-9u-S7e" firstAttribute="top" secondItem="LrD-dY-SzW" secondAttribute="top" constant="20" id="45D-H9-LQq"/>
                             <constraint firstItem="LrD-dY-SzW" firstAttribute="bottom" secondItem="Ubc-x5-nXF" secondAttribute="bottom" constant="20" id="Apj-GE-7yF"/>
+                            <constraint firstItem="1S8-VV-u2h" firstAttribute="top" secondItem="yua-fv-bwO" secondAttribute="top" constant="20" id="Goa-xF-ONa"/>
+                            <constraint firstItem="GKx-9u-S7e" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.167504" id="IC4-gO-fif"/>
+                            <constraint firstItem="LrD-dY-SzW" firstAttribute="trailing" secondItem="GKx-9u-S7e" secondAttribute="trailing" constant="20" id="Rx8-Cm-mK3"/>
+                            <constraint firstItem="zim-Vs-h8f" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.0837521" id="Uk0-vH-dhk"/>
+                            <constraint firstItem="dNc-bv-Jhm" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.0502513" id="Vxn-lf-kNR"/>
                             <constraint firstItem="LrD-dY-SzW" firstAttribute="bottom" secondItem="1nh-xw-9zF" secondAttribute="bottom" constant="20" id="YT6-hS-bXv"/>
+                            <constraint firstItem="LrD-dY-SzW" firstAttribute="trailing" secondItem="dNc-bv-Jhm" secondAttribute="trailing" constant="32" id="cw8-27-LLQ"/>
+                            <constraint firstItem="1S8-VV-u2h" firstAttribute="leading" secondItem="8rn-ue-Ieh" secondAttribute="trailing" constant="8" id="eKn-Hy-ypg"/>
+                            <constraint firstItem="1S8-VV-u2h" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.0837521" id="hr9-tp-PVE"/>
+                            <constraint firstItem="iLi-UF-hut" firstAttribute="centerY" secondItem="yua-fv-bwO" secondAttribute="centerY" id="iuM-5Q-4bv"/>
                             <constraint firstItem="1nh-xw-9zF" firstAttribute="centerX" secondItem="yua-fv-bwO" secondAttribute="centerX" id="j7Y-HB-bIY"/>
                             <constraint firstItem="1nh-xw-9zF" firstAttribute="width" secondItem="1nh-xw-9zF" secondAttribute="height" multiplier="10:11" id="jKL-lo-TNE"/>
+                            <constraint firstItem="zim-Vs-h8f" firstAttribute="top" secondItem="yua-fv-bwO" secondAttribute="top" constant="20" id="jag-86-FuD"/>
+                            <constraint firstItem="iLi-UF-hut" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.0536013" id="kTi-ny-LVQ"/>
                             <constraint firstItem="Ubc-x5-nXF" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.265494" id="mQi-H4-7rw"/>
+                            <constraint firstItem="zim-Vs-h8f" firstAttribute="leading" secondItem="LrD-dY-SzW" secondAttribute="leading" constant="20" id="n1E-wJ-GFA"/>
+                            <constraint firstItem="8rn-ue-Ieh" firstAttribute="width" secondItem="yua-fv-bwO" secondAttribute="width" multiplier="0.0837521" id="sqk-it-IBi"/>
+                            <constraint firstItem="dNc-bv-Jhm" firstAttribute="top" secondItem="LrD-dY-SzW" secondAttribute="top" constant="38" id="ulT-Jw-qZZ"/>
+                            <constraint firstItem="8rn-ue-Ieh" firstAttribute="leading" secondItem="zim-Vs-h8f" secondAttribute="trailing" constant="8" id="v4B-yV-kes"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="1194" height="834"/>
@@ -78,46 +115,54 @@
                         <outlet property="arView" destination="NjZ-9K-hSS" id="8zd-hd-lV9"/>
                         <outlet property="botonReady" destination="1nh-xw-9zF" id="ISB-XE-CFl"/>
                         <outlet property="botonRecolocarEscena" destination="Ubc-x5-nXF" id="Fgl-A8-slD"/>
+                        <outlet property="corazonVida1" destination="zim-Vs-h8f" id="c99-1t-4ka"/>
+                        <outlet property="corazonVida2" destination="8rn-ue-Ieh" id="g7C-MI-WOx"/>
+                        <outlet property="corazonVida3" destination="1S8-VV-u2h" id="ckR-20-iky"/>
+                        <outlet property="panelFinal" destination="iLi-UF-hut" id="tlX-Bn-EBx"/>
+                        <outlet property="panelScore" destination="GKx-9u-S7e" id="3ps-oI-yDn"/>
+                        <outlet property="scoreLabel" destination="dNc-bv-Jhm" id="bBY-2f-HbY"/>
+                        <segue destination="V6j-4g-ZdX" kind="showDetail" identifier="Volver Pantalla Inicio" id="Mk2-vu-ebI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="137.68844221105527" y="133.81294964028777"/>
         </scene>
         <!--Pantalla Inicio View Controller-->
         <scene sceneID="3XV-LM-djj">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="V6j-4g-ZdX" customClass="PantallaInicioViewController" customModule="Virus_Blaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PantallaInicioViewController" modalPresentationStyle="fullScreen" id="V6j-4g-ZdX" customClass="PantallaInicioViewController" customModule="Virus_Blaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZNS-Pq-ygF">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-8s-fVI" userLabel="botonEmpezarPartida">
-                                <rect key="frame" x="532" y="530" width="130" height="130"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo Virus Blaster" translatesAutoresizingMaskIntoConstraints="NO" id="gYp-TS-2NW">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="Mpr-Us-edv"/>
+                                    <constraint firstAttribute="width" secondItem="gYp-TS-2NW" secondAttribute="height" multiplier="199:139" id="b6X-sY-NoC"/>
                                 </constraints>
-                                <state key="normal" image="Boton Ready"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-8s-fVI" userLabel="botonEmpezarPartida">
+                                <rect key="frame" x="483" y="661" width="228" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y3a-8s-fVI" secondAttribute="height" multiplier="114:65" id="6gM-We-jdI"/>
+                                </constraints>
+                                <state key="normal" image="Boton Start (Virus Blaster)"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="UUt-QP-r99"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Titulo Think &amp; Build" translatesAutoresizingMaskIntoConstraints="NO" id="GYI-6w-bG0">
-                                <rect key="frame" x="117" y="20" width="960" height="256"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="256" id="hyq-Su-gnB"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y7M-gI-jGu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Y7M-gI-jGu" firstAttribute="bottom" secondItem="y3a-8s-fVI" secondAttribute="bottom" constant="154" id="IuZ-Jr-NkZ"/>
-                            <constraint firstItem="y3a-8s-fVI" firstAttribute="centerX" secondItem="ZNS-Pq-ygF" secondAttribute="centerX" id="TSC-I8-QgB"/>
-                            <constraint firstItem="GYI-6w-bG0" firstAttribute="leading" secondItem="Y7M-gI-jGu" secondAttribute="leading" constant="117" id="ZsV-MT-OJ7"/>
-                            <constraint firstItem="y3a-8s-fVI" firstAttribute="leading" secondItem="Y7M-gI-jGu" secondAttribute="leading" constant="532" id="c7q-EZ-4gM"/>
-                            <constraint firstItem="GYI-6w-bG0" firstAttribute="top" secondItem="Y7M-gI-jGu" secondAttribute="top" constant="20" id="eiB-uO-6z2"/>
-                            <constraint firstItem="y3a-8s-fVI" firstAttribute="centerX" secondItem="GYI-6w-bG0" secondAttribute="centerX" id="vWv-8t-BWH"/>
+                            <constraint firstItem="y3a-8s-fVI" firstAttribute="width" secondItem="ZNS-Pq-ygF" secondAttribute="width" multiplier="0.190955" id="9Fl-1Y-Vfg"/>
+                            <constraint firstItem="gYp-TS-2NW" firstAttribute="leading" secondItem="Y7M-gI-jGu" secondAttribute="leading" id="AMn-Fu-V2m"/>
+                            <constraint firstItem="Y7M-gI-jGu" firstAttribute="bottom" secondItem="y3a-8s-fVI" secondAttribute="bottom" constant="23" id="IP0-Q2-XaY"/>
+                            <constraint firstItem="gYp-TS-2NW" firstAttribute="top" secondItem="Y7M-gI-jGu" secondAttribute="top" id="TUC-6y-VaF"/>
+                            <constraint firstItem="gYp-TS-2NW" firstAttribute="width" secondItem="ZNS-Pq-ygF" secondAttribute="width" id="hiN-tH-Iyc"/>
+                            <constraint firstAttribute="bottom" secondItem="gYp-TS-2NW" secondAttribute="bottom" id="ilf-e8-fRo"/>
+                            <constraint firstItem="y3a-8s-fVI" firstAttribute="centerX" secondItem="ZNS-Pq-ygF" secondAttribute="centerX" id="ume-uT-M3h"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -129,7 +174,11 @@
     <resources>
         <image name="Boton Ready" width="400" height="440"/>
         <image name="Boton Relocate Board" width="634" height="112"/>
-        <image name="Titulo Think &amp; Build" width="1070" height="188"/>
+        <image name="Boton Start (Virus Blaster)" width="256" height="170"/>
+        <image name="Fondo Virus Blaster" width="1194" height="834"/>
+        <image name="Panel Game Over" width="1680" height="1684"/>
+        <image name="Panel Score" width="2621" height="1352"/>
+        <image name="Vida Corazon" width="2048" height="2048"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

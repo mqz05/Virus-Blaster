@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA539FDF262A150F00C9AB63 /* Virus (Virus Blaster).usdz in Resources */ = {isa = PBXBuildFile; fileRef = CA539FDE262A150F00C9AB63 /* Virus (Virus Blaster).usdz */; };
 		EDC7DD472625E3F6007E1C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7DD462625E3F6007E1C75 /* AppDelegate.swift */; };
 		EDC7DD492625E3F6007E1C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC7DD482625E3F6007E1C75 /* ViewController.swift */; };
 		EDC7DD4B2625E3F6007E1C75 /* VirusBlaster.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EDC7DD4A2625E3F6007E1C75 /* VirusBlaster.rcproject */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA539FDE262A150F00C9AB63 /* Virus (Virus Blaster).usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Virus (Virus Blaster).usdz"; sourceTree = "<group>"; };
 		EDC7DD432625E3F6007E1C75 /* Virus Blaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Virus Blaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDC7DD462625E3F6007E1C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDC7DD482625E3F6007E1C75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		EDC7DD3A2625E3F6007E1C75 = {
 			isa = PBXGroup;
 			children = (
+				CA539FDE262A150F00C9AB63 /* Virus (Virus Blaster).usdz */,
 				EDC7DD452625E3F6007E1C75 /* Virus Blaster */,
 				EDC7DD442625E3F6007E1C75 /* Products */,
 			);
@@ -126,6 +129,7 @@
 			files = (
 				EDC7DD532625E406007E1C75 /* LaunchScreen.storyboard in Resources */,
 				EDC7DD502625E406007E1C75 /* Assets.xcassets in Resources */,
+				CA539FDF262A150F00C9AB63 /* Virus (Virus Blaster).usdz in Resources */,
 				EDC7DD4E2625E3F6007E1C75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDC7DD4B2625E3F6007E1C75 /* VirusBlaster.rcproject in Sources */,
 				EDC7DD492625E3F6007E1C75 /* ViewController.swift in Sources */,
 				EDC7DD472625E3F6007E1C75 /* AppDelegate.swift in Sources */,
-				EDC7DD4B2625E3F6007E1C75 /* VirusBlaster.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
