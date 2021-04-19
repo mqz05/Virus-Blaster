@@ -105,25 +105,23 @@ class ViewController: UIViewController {
     func generarVirus() {
         if modoDeJuegoActual == .enPartida {
             DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
-                self.crearPosicionarVirus()
+                let tiempo: Double = 7
+                
+                self.crearPosicionarVirus(tiempo: tiempo)
                 self.generarVirus()
                 
-                DispatchQueue.main.asyncAfter(deadline: .now() + 6.35, execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(tiempo - 1.5), execute: {
                     for (index, valor) in self.tableroJuego.children.enumerated() {
-                        if valor.name == "Virus" && (valor.position.x < 30 && valor.position.x > -30) && (valor.position.z < 30 && valor.position.z > -30) {
+                        if valor.name == "Virus" {
                             
-                                // CHECK
-                                
+                            if (valor.position.x == 0 && (valor.position.z > -0.3 && valor.position.z < 0.3)) || (valor.position.z == 0 && (valor.position.x > -0.3 && valor.position.x < 0.3)) || (valor.position.x < 0.225 && valor.position.x > 0 && valor.position.z < 0.225 && valor.position.z > 0) || (valor.position.x > -0.225 && valor.position.x < 0 && valor.position.z > -0.225 && valor.position.z < 0) || (valor.position.x < 0.225 && valor.position.x > 0 && valor.position.z > -0.225 && valor.position.z < 0) || (valor.position.x > -0.225 && valor.position.x < 0 && valor.position.z < 0.225 && valor.position.z > 0) {
                                 self.numeroDeVidas -= 1
-                                
-                            print("SI: \(valor.position)")
                                 
                                 self.tableroJuego.children[index].isEnabled = false
                                 self.tableroJuego.children[index].removeFromParent()
                                 
                                 self.animacionBajarCorazonVida()
-                        } else {
-                            print("NO: \(valor.position)")
+                            }
                         }
                     }
                 })
@@ -131,7 +129,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func crearPosicionarVirus() {
+    func crearPosicionarVirus(tiempo: Double) {
         let virus = crearVirus()
         virus.name = "Virus"
         virus.generateCollisionShapes(recursive: true)
@@ -141,11 +139,11 @@ class ViewController: UIViewController {
         tableroJuego.addChild(virus)
         
         var transform = Transform()
-        transform.translation = SIMD3<Float>(x: 0, y: 0, z: 0)
+        transform.translation = SIMD3<Float>(x: 0, y: 0.5, z: 0)
         transform.scale = SIMD3(x: 0.005, y: 0.005, z: 0.005)
         //transform.rotation
         
-        virus.move(to: transform, relativeTo: tableroJuego.sekilin, duration: 9, timingFunction: .linear)
+        virus.move(to: transform, relativeTo: tableroJuego, duration: TimeInterval(tiempo), timingFunction: .linear)
     }
     
     func crearVirus() -> ModelEntity {
