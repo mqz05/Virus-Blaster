@@ -104,13 +104,13 @@ class ViewController: UIViewController {
     
     func generarVirus() {
         if modoDeJuegoActual == .enPartida {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 4, execute: {
-                let tiempo: Double = 7
+            DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 1.75...3), execute: {
+                let tiempo: Double = Double.random(in: 3.25...5)
                 
                 self.crearPosicionarVirus(tiempo: tiempo)
                 self.generarVirus()
                 
-                DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(tiempo - 1.5), execute: {
+                DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(tiempo - (tiempo * 0.2)), execute: {
                     for (index, valor) in self.tableroJuego.children.enumerated() {
                         if valor.name == "Virus" {
                             
@@ -140,8 +140,8 @@ class ViewController: UIViewController {
         
         var transform = Transform()
         transform.translation = SIMD3<Float>(x: 0, y: 0.5, z: 0)
-        transform.scale = SIMD3(x: 0.005, y: 0.005, z: 0.005)
-        //transform.rotation
+        transform.scale = SIMD3<Float>(x: 0.001, y: 0.001, z: 0.001)
+        transform.rotation += simd_quatf(angle: 120 * Float.pi / 180.0, axis: SIMD3<Float>(x: 1, y: 1, z: 1))
         
         virus.move(to: transform, relativeTo: tableroJuego, duration: TimeInterval(tiempo), timingFunction: .linear)
     }
@@ -152,7 +152,9 @@ class ViewController: UIViewController {
         let url = URL(fileURLWithPath: urlPath!)
         nuevoVirus = try? ModelEntity.loadModel(contentsOf: url)
         
-        nuevoVirus.scale = SIMD3(x: 0.005, y: 0.005, z: 0.005)
+        let escalaRandom = Double.random(in: 0.003...0.006)
+        
+        nuevoVirus.scale = SIMD3<Float>(x: Float(escalaRandom), y: Float(escalaRandom), z: Float(escalaRandom))
         
         return nuevoVirus
     }
